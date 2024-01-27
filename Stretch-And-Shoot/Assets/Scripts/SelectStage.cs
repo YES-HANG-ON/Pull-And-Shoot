@@ -9,6 +9,7 @@ public class SelectStage : MonoBehaviour
     // Start is called before the first frame update
     [SerializeField]
     private GameObject Stage1;
+    private GameObject StageInstance;
 
     void Start()
     {
@@ -23,7 +24,12 @@ public class SelectStage : MonoBehaviour
 
     public void onClickBtn_1()
     {
-        Stage1.SetActive(true);
+        StageInstance = Instantiate(Stage1);
+        GameManager.instance.starCount = 3;
+        GameManager.instance.inStage = true;
+        GameManager.instance.NowStage = StageInstance;
+        GameManager.instance.setBall();
+        StageInstance.SetActive(true);
         gameObject.SetActive(false);
     }
     public void onClickBtn_2()

@@ -1,18 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
 
-
-public class Ball : MonoBehaviour
+public class Stage1 : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public int StarCount = 3;
+
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         

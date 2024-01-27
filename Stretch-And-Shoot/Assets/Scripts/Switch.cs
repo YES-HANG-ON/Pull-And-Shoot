@@ -30,4 +30,9 @@ public class Switch : MonoBehaviour
             Destroy(Wall);
         }
     }
+
+    public void decStar()
+    {
+
+    }
 }
