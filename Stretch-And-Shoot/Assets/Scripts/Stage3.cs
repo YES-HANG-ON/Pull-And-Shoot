@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Stage1 : MonoBehaviour
+public class Stage3 : MonoBehaviour
 {
     // public int StarCount = 3;
 
@@ -15,7 +15,7 @@ public class Stage1 : MonoBehaviour
     {
         if (GameManager.instance.starCount == 0)
         {
-            GameManager.instance.StageClear[1] = true;
+            GameManager.instance.StageClear[3] = true;
         }        
     }
 }

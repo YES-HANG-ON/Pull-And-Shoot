@@ -27,12 +27,15 @@ public class GameManager : MonoBehaviour
 
     public int Score = 0;
 
+    public bool[] StageClear = new bool[] { false };
+
     void Awake()
     {
         if (instance == null)
         {
             instance = this;
         }
+        StageClear[0] = true;
     }
     void Start()
     {
